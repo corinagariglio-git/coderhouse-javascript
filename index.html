@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandrone Dairy Solutions - Crear Orden</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <h2>Sandrone Dairy Solutions</h2>
+      <div class="links">
+        <a href="./index.html" class="active">Inicio</a>
+        <a href="./pages/pendientesDeEmbarque.html">Pendientes</a>
+        <a href="./pages/embarcadosNoCobrados.html">Embarcados</a>
+      </div>
+    </nav>
+
+    <main>
+      <h3>Crear nueva orden</h3>
+
+      <form id="formularioOrden" class="formulario">
+        <label for="numeroOrden">Número de orden:</label>
+        <input type="number" id="numeroOrden" required />
+
+        <label for="exportador">Exportador:</label>
+        <input type="text" id="exportador" required />
+
+        <label for="importador">Importador:</label>
+        <input type="text" id="importador" required />
+
+        <label for="producto">Producto:</label>
+        <input type="text" id="producto" required />
+
+        <label for="cantidad">Cantidad (tn):</label>
+        <input type="number" id="cantidad" required />
+
+        <label for="fechaCarga">Fecha de carga (opcional):</label>
+        <input type="date" id="fechaCarga" />
+
+        <label for="fechaCobro">Fecha de cobro (opcional):</label>
+        <input type="date" id="fechaCobro" />
+
+        <button type="submit" class="boton">Crear orden</button>
+      </form>
+
+      <p id="mensaje" class="mensaje"></p>
+    </main>
+
+    <footer class="footer">&copy; Sandrone Dairy Solutions Asociados</footer>
+
+    <script src="./js/script.js" defer></script>
+  </body>
+</html>

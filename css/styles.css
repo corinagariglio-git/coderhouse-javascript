@@ -1,0 +1,165 @@
+/* Estilos Generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fdfdff;
+  color: #333;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 0.75rem 0;
+  font-size: 0.94rem;
+  color: #555;
+}
+
+/* Estilos Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #f8c8f8, #c8e8f8);
+  padding: 0.94rem 1.88rem;
+  border-radius: 0.94rem;
+  box-shadow: 0 0.25rem 0.38rem rgba(0, 0, 0, 0.1);
+  margin: 0.5rem;
+}
+
+.navbar h2 {
+  font-size: 1.5rem;
+  color: #6a2c91;
+}
+
+.navbar .links a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #4a2c91;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.navbar .links a.active,
+.navbar .links a:hover {
+  background: #fff;
+  color: #6a2c91;
+}
+
+/* Estilos Index */
+
+.descripcion-simulador {
+  background: linear-gradient(90deg, #fce8f8, #e8f8fc);
+  padding: 0.94rem;
+  border-radius: 0.75rem;
+  margin: 0.75rem;
+  color: #6a2c91;
+  font-size: 1.06rem;
+  line-height: 1.5;
+  text-align: justify;
+  box-shadow: 0 0.25rem 0.38rem rgba(0, 0, 0, 0.05);
+}
+
+.card {
+  background: white;
+  padding: 0.94rem;
+  border-radius: 0.75rem;
+  margin: 0.75rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(100, 100, 100, 0.1);
+}
+
+input,
+button {
+  display: block;
+  width: 100%;
+  margin: 0.38rem 0;
+  padding: 0.5rem;
+  border-radius: 0.38rem;
+  border: 0.06rem solid #ccc;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #c9e4f7;
+  outline: none;
+}
+
+.boton {
+  background: #d8b4f8;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background: #f9c5d1;
+  transform: scale(1.02);
+}
+
+.mensaje {
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  display: none;
+}
+.mensaje.mostrar {
+  display: block;
+  background: #e8fff0;
+  color: #1b7a3c;
+  border: 1px solid #bfe8cf;
+}
+
+/* Estilos páginas Pendientes de Embarque y Embarcados no Cobrados */
+.orders-container {
+  margin-top: 0.5rem;
+}
+.order-card {
+  background: linear-gradient(135deg, #f8c8f8, #c8e8f8, #d8b4f8);
+  padding: 0.63rem;
+  border: 0.06rem solid #ddd;
+  margin: 0.63rem 0;
+  border-radius: 0.5rem;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.order-card:hover {
+  transform: scale(1.01);
+}
+
+.order-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.resumen {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Estilos Desktop */
+@media only screen and (min-width: 800px) {
+  .navbar {
+    padding: 0.75rem 2.5rem;
+    margin: 0.75rem;
+  }
+  main {
+    max-width: 50rem;
+    margin: auto;
+  }
+}
